@@ -1,10 +1,11 @@
-import React, { PropTypes } from 'react'
-import { Grid, Cell, Button } from 'react-mdl'
+import React, {PropTypes} from "react"
+import S from "shorti"
+import {Grid, Cell, Button} from "react-mdl"
 
-const Duang = ({ message, counter, doDuang }) => {
+const Duang = ({message, counter, doDuang}) => {
   return (
     <div>
-      <Grid className="mdl-typography--text-center">
+      <Grid shadow={1} className="hidden">
         <Cell col={6}>
           <h1>{message} {counter}</h1>
           <h2>{message} {counter}</h2>
@@ -24,9 +25,9 @@ const Duang = ({ message, counter, doDuang }) => {
         </Cell>
       </Grid>
       <Grid>
-          <Cell col={12} className="mdl-typography--text-center">
-            <Button raised accent ripple onClick={doDuang}>加印记</Button>
-          </Cell>
+        <Cell col={12} style={ S('text-center') }>
+          {counter} <Button raised accent ripple onClick={doDuang}>加印记</Button>
+        </Cell>
       </Grid>
     </div>
   )

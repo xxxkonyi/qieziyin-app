@@ -1,16 +1,13 @@
-import * as ActionTypes from '../constants/ActionTypes'
+import * as ActionTypes from "../constants/ActionTypes";
 
 export const actionCreators = {
   doDuang(message) {
     return {
       type: ActionTypes.DO_DUANG,
-      payload : message
+      payload: message
     }
   },
-  doDuang2(message) {
-    return {
-      type: ActionTypes.DO_DUANG,
-      payload : message
-    }
+  query(commandMessage) {
+
   }
 }

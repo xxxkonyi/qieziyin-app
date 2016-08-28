@@ -1,6 +1,3 @@
-import 'react-mdl/extra/css/material.purple-deep_purple.min.css'
-import 'react-mdl/extra/material.js'
-
 import React from 'react'
 import { Route, IndexRoute } from 'react-router'
 
