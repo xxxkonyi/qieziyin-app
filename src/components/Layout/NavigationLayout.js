@@ -9,9 +9,9 @@ const logo = 'material-icons'
 const NavigationLayout = ({children}) => {
   return (
     <div>
-      <Layout fixedHeader>
-        <Header waterfall>
-          <HeaderRow title={<strong>茄子印</strong>}>
+      <Layout >
+        <Header>
+          <HeaderRow title={<strong>茄子印1</strong>}>
             <Navigation>
               <Link to="/">首页</Link>
               <Link to="/repos">印记</Link>

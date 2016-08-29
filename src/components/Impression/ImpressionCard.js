@@ -1,25 +1,26 @@
+import moment from "moment";
 import React, {PropTypes} from "react";
 import S from "shorti";
-import {Card, CardTitle, CardText, CardMenu, IconButton, CardActions, Button, ChipContact} from "react-mdl";
+import {Card, CardTitle, CardMedia, CardText, CardMenu, IconButton, CardActions} from "react-mdl";
 
 const ImpressionCard = ({...impression}) => {
-  let imageUrl = impression.image.urls.regular
+  let imageUrl = impression.image.urls.raw
   let avatar = impression.user.avatar.small
 // style={{background: 'rgba(0,0,0,0.5)'}}
   return (
-    <Card shadow={0} style={{background: 'url(' + imageUrl + ') center / cover', margin: 'auto'}}>
-      <CardTitle expand />
-      <CardText style={{background: 'rgba(0,0,0,0.2)', padding: '0', width: '100%', color: '#fff'}}>
-        <p style={ S('m-0 p-8 color-ddd') }>{impression.content}</p>
+    <Card shadow={0} className="impression" style={{background: 'url(' + imageUrl + ') center / cover', color: '#fff'}}>
+      <CardTitle expand></CardTitle>
+      <CardText style={{color: '#fff'}}>
+        {impression.content}
       </CardText>
-      <CardActions style={{background: 'rgba(0,0,0,0.2)', display: 'flex', alignItems: 'center', color: '#fff'}}>
+      <CardActions style={{display: 'flex', alignItems: 'center'}}>
         <span>
-          <img src={avatar} alt="Avatar" className="img-circle img-responsive"/>
+          <img src={avatar} alt='Avatar' className="img-circle img-responsive"/>
         </span>
         <div className="mdl-layout-spacer"></div>
-        <span>{impression.created_at}</span>
+        <span>{moment(impression.created_at).format('llll')}</span>
       </CardActions>
-      <CardMenu style={{color: '#fff'}}>
+      <CardMenu>
         <IconButton name="favorite"/>
       </CardMenu>
     </Card>
