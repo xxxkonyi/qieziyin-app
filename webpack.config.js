@@ -23,13 +23,13 @@ const plugins = [
       collapseWhitespace:false
     }
   }),
+  new ExtractTextPlugin('css/[name].css'),
+  new webpack.optimize.CommonsChunkPlugin('vendor', 'js/vendor.js'),
   new CopyWebpackPlugin([{
     from: outputPath,
     to: releasePath,
     toType: 'dir'
-  }]),
-  new ExtractTextPlugin('css/[name].css'),
-  new webpack.optimize.CommonsChunkPlugin('vendor', 'js/vendor.js')
+  }])
 ];
 const jsLoaders = ['babel'];
 

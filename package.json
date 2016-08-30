@@ -33,7 +33,9 @@
     "reselect": "^2.5.3",
     "rx": "^4.1.0",
     "shorti": "^1.1.6",
-    "vertx3-eventbus-client": "^3.3.2"
+    "vertx3-eventbus-client": "^3.3.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
@@ -57,8 +59,6 @@
     "redux-devtools-log-monitor": "^1.0.11",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "url-loader": "^0.5.7"
   }
 }

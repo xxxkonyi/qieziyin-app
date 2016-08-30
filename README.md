@@ -20,8 +20,8 @@ npm i --save react-redux
 npm i --save isomorphic-fetch
 
 # run
-NODE_ENV=dev npm start
-NODE_ENV=production npm start
+NODE_ENV=dev && npm start
+NODE_ENV=production && npm start
 For Windows users:
 SET "NODE_ENV=dev" && npm start
 SET "NODE_ENV=production" && npm start
