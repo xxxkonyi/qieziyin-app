@@ -5,10 +5,10 @@ import ImpressionCard from "./ImpressionCard";
 const ImpressionGrid = ({impressions}) => {
   return (
     <div style={{maxWidth: "1024px", margin: "auto"}}>
-      <Grid>
+      <Grid noSpacing>
         {
           impressions.map(impression =>
-            <Cell col={4} phone={12} tablet={4}>
+            <Cell col={12} phone={12} tablet={12}>
               <ImpressionCard key={impression.id} {...impression}/>
             </Cell>
           )
@@ -17,10 +17,10 @@ const ImpressionGrid = ({impressions}) => {
     </div>
   )
   // return (
-  //   <div>
+  //   <div style={{maxWidth: "1024px", margin: "auto"}}>
   //     {
   //       impressions.map(impression =>
-  //             <ImpressionCard key={impression.id} {...impression}/>
+  //         <ImpressionCard key={impression.id} {...impression}/>
   //       )
   //     }
   //   </div>

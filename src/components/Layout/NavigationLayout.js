@@ -10,13 +10,11 @@ const NavigationLayout = ({children}) => {
   return (
     <div>
       <Layout >
-        <Header>
-          <HeaderRow title={<strong>茄子印1</strong>}>
+        <Header title={<strong>茄子印1</strong>}>
             <Navigation>
               <Link to="/">首页</Link>
               <Link to="/repos">印记</Link>
             </Navigation>
-          </HeaderRow>
         </Header>
         <Content>
           {children}

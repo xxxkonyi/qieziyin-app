@@ -1,4 +1,4 @@
-import "react-mdl/extra/css/material.brown-deep_purple.min.css";
+import "react-mdl/extra/css/material.green-deep_purple.min.css";
 import "../components/css/qieziyin.css";
 import "react-mdl/extra/material.js";
 import React from "react";
